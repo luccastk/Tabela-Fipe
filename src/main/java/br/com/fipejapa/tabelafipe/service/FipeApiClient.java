@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class FipeApiClient {
 
-    public String urlApi(String url) {
+    public String requestApi(String url) {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
